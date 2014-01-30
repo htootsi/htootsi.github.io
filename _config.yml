@@ -1,0 +1,42 @@
+name: Bivee
+pygments: true
+markdown: kramdown
+paginate: 10
+version: 0.9
+
+seo:
+  author: Nicholas Kingston, Scott Schaffter, Arsham Skrenes - Bivee
+  description: 
+  keywords:
+
+contact:
+  phone: '+1 (202) 258 2640'
+  email: 'sayhi@bivee.co'
+  address:
+  	number: 'Suite 115-197'
+    street: '1350 Beverly Road'
+    city:  'Mclean' 
+    state: 'Virginia'
+    zip: '22101'
+
+url:
+permalink: /:year/:title
+
+social:
+  facebook: 
+  twitter: 'biveeco'
+  linkedin:
+  github: 'biveeco'
+
+google:
+  analytics : 'UA-42800055-1'
+  verification : 'SVC'
+
+facebook:
+  admins : ''
+  api : ''
+
+assets:
+  img: '/assets/images/'
+  css: '/assets/stylesheets/'
+  js: '/assets/javascripts/'
