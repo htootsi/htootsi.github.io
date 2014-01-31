@@ -1,0 +1,38 @@
+{% include header.html %}
+<body class="homepage">
+    <!-- Header Wrapper -->
+      <div id="header-wrapper" class="wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="12u">
+            
+              <!-- Header -->
+                <div id="header">
+             
+                  <!-- Logo -->
+                    <div id="logo">
+                      <h1><a href="#">{{ site.name }}</a></h1>
+                      <span class="byline">{{ site.tagline }}</span>
+                    </div>
+                  <!-- /Logo -->
+                  
+                  <!-- Nav -->
+                    <nav id="nav">
+                      <ul style="box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,1.0); background: rgba(0,0,0,0.15);">
+{% include nav.html %}                       
+                      </ul>
+                    </nav>
+
+                  <!-- /Nav -->
+
+                </div>
+              <!-- /Header -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- /Header Wrapper -->
+{{ content }}
+
+{% include footer.html %}

@@ -1,78 +1,109 @@
 ---
-layout: default
-class: homepage
-title: Helen Tootsi
-tagline: This is an awesome tagline
+layout: homepage
+image: '/asseets/images/homebanner.jpg'
+
+about-color: '#1abc9c'
+about-title: 'My World and I'
+
+thoughts-color: '#fafafa'
+thoughts-title: 'Thoughts'
+thoughts-description: 'This is what i think of my thoughts'
+thoughts-sub-tag: 'This is very deep I know'
+
+articles-color: '#ecf0f1'
+articles-title: 'Articles'
+articles-description: 'Big Scary Title'
+articles-sub-tag: 'These are fascinating articles'
+
 ---
-
-{% include header.html %}
-
-		<!-- Header Wrapper -->
-			<div id="header-wrapper" class="wrapper">
-				<div class="container">
-					<div class="row">
-						<div class="12u">
-						
-							<!-- Header -->
-								<div id="header">
-									
-									<!-- Logo -->
-										<div id="logo">
-											<h1><a href="#">{% site.author %}</a></h1>
-											<span class="byline">{% page.tagline %}</span>
-										</div>
-									<!-- /Logo -->
-									
-									<!-- Nav -->
-{% include nav.html %}
-									<!-- /Nav -->
-
-								</div>
-							<!-- /Header -->
-
-						</div>
-					</div>
-				</div>
-			</div>
-		<!-- /Header Wrapper -->
 		
 		<!-- Intro Wrapper -->
-			<div id="intro-wrapper" class="wrapper wrapper-style1">
-				<div class="title">The Introduction</div>
+    <div id="intro-wrapper" class="wrapper wrapper-style1" style="background-color: {{ page.about-color }};">
+      <div class="title" style="background-color: {{ page.about-color }};">{{ page.about-title }}</div>
+        <div class="container">
+          <div class="row">
+            <div class="12u">
+              
+              <!-- Intro -->
+              <section id="intro">
+{% include about.html %}
+				<ul class="actions">
+					{% if site.social.fb %}<li><a href="{{ site.social.fb }}"><i class="fa fa-facebook"></i></a></li>{% endif %}
+					{% if site.social.tw %}<li><a href="{{ site.social.tw }}"><i class="fa fa-twitter"></i></a></li>{% endif %}
+					{% if site.social.in %}<li><a href="{{ site.social.in }}"><i class="fa fa-linkedin"></i></a></li>{% endif %}
+					{% if site.social.insta %}<li><a href="{{ site.social.insta }}"><i class="fa fa-instagram"></i></a></li>{% endif %}
+				</ul>
+				<ul class="actions">
+					<li><a href="/about/" class="button button-style1">About Me</a></li>
+				</ul>
+ 			  </section>
+              <!-- /Intro -->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- /Intro Wrapper -->
+  </div>
+
+
+
+
+		<!-- Highlights Wrapper -->
+			<div id="articles" class="wrapper wrapper-style3" style="background-color: {{ page.articles-color }};">
+				<div class="title" style="background-color: {{ page.articles-color }};">{{ page.articles-title }}</div>
 				<div class="container">
 					<div class="row">
 						<div class="12u">
+
+							<header class="style1">
+								<h2>{{ page.articles-description }}</h2>
+								<p class="byline">{{ page.articles-sub-tag }}</p>
+							</header>
+							<!--<div class="image image-featured">
+								<img src="/assets/images/articles-banner.jpg" alt="" />
+							</div>-->
 							
-							<!-- Intro -->
-								<section id="intro">
-									<p class="style1">So in case you were wondering what this is all about ...</p>
-									<p class="style2">
-										Escape Velocity is a free responsive<br class="mobile-hide" />
-										site template by <a href="http://html5up.net/" class="nobr">HTML5 UP</a>
-									</p>
-									<p class="style3">It's <strong>responsive</strong>, built on <strong>HTML5</strong> and <strong>CSS3</strong>, and released for
-									free under the <a href="http://html5up.net/license/">Creative Commons Attribution 3.0 license</a>, so use it for any of
-									your personal or commercial projects &ndash; just be sure to credit us!</p>
-									<!--
-									<p class="style3">Mauris tellus lacus, tincidunt eget mattis at, laoreet vel velit. 
-									Aliquam diam ante, aliquet sit amet vulputate lorem at placerat at nisl. 
-									Maecenas et gravida ligula sed lacus euismod tincidunt nullam eget justo orci.</p>
-									-->
-									<ul class="actions">
-										<li><a href="#" class="button button-style3 button-big">Proceed</a></li>
-									</ul>
-								</section>
-							<!-- /Intro -->
-							
+							<!-- Highlights -->
+								<div id="highlights" style="text-align: center;">
+									<!-- Image -->
+										<div class="image image-featured" style="max-width: 1000px; display: inline-block;">
+											<img src="/assets/images/articles-banner.jpg" alt="" />
+										</div>
+									<!-- /Image -->
+									<div>
+										<div class="row">
+											{% for post in site.categories.articles limit:6 %}
+											<div class="4u">
+												<section class="highlight">
+													<h3><a href="{{ post.url }}" style="color:#2c3e50;">{{ post.title }}</a></h3>
+													<p>{{ post.summary }}</p>
+													<ul class="actions">
+														<li><a href="{{post.url }}" class="button button-style1" style="font-size: 60%; background: #95a5a6;">Continue Reading</a></li>
+													</ul>
+													<div style="display: inline-block; clear: both; height: 2em; width: 30%; border-top: 1px solid #cfcfcf; margin-top: 2em;"></div>
+												</section>
+											</div>
+											{% endfor %}
+										</div>
+									</div>
+								</div>
+								<ul class="actions actions-centered">
+									<li><a href="#" class="button button-style1 button-big" style="background: #34495e;">Read More</a></li>
+								</ul>
+							<!-- /Highlights -->			
 						</div>
 					</div>
 				</div>
 			</div>
-		<!-- /Intro Wrapper -->
-		
+		<!-- /Highlights Wrapper -->
+
+
+
+
 		<!-- Main Wrapper -->
-			<div class="wrapper wrapper-style2">
-				<div class="title">The Details</div>
+			<div id="thoughts" class="wrapper wrapper-style2" style="background-color: {{ page.thoughts-color }};">
+				<div class="title" style="background-color: {{ page.thoughts-color }}">{{ page.thoughts-title }}</div>
 				<div class="container">
 					<div class="row">
 						<div class="12u">
@@ -80,67 +111,35 @@ tagline: This is an awesome tagline
 							<!-- Main -->
 								<div id="main">
 									
-									<!-- Image -->
-										<a href="http://fav.me/d5pjw3g" class="image image-featured">
-											<img src="images/pic01.jpg" alt="" />
-										</a>
-									<!-- /Image -->
 									
 									<!-- Features -->
 										<section id="features">
 											<header class="style1">
-												<h2>Dolor consequat feugiat amet veroeros</h2>
-												<p class="byline">Feugiat dolor nullam orci pretium phasellus justo</p>
+												<h2>{{ page.thoughts-description }}</h2>
+												<p class="byline">{{ page.thoughts-sub-tag }}</p>
 											</header>
+											<!-- Image -->
+										<div class="image image-featured">
+											<img src="/assets/images/thoughts-banner.jpg" alt="" />
+										</div>
+									<!-- /Image -->
 											<div class="feature-list">
 												<div>
-													<div class="row">
-														<div class="6u">
+												{% for post in site.categories.thoughts limit:10 %}
+													<a href="{{ post.url }}" title="{{ post.title }}" style="text-decoration: none;">
+														<div class="12u">
 															<section>
-																<h3 class="fa fa-comment">Mattis velit diam vulputate</h3>
-																<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+																<h3 class="fa fa-book">{{ post.title }}</h3>
+																<p>{{ post.summary }}</p>
 															</section>
 														</div>
-														<div class="6u">
-															<section>
-																<h3 class="fa fa-refresh">Lorem ipsum dolor sit veroeros</h3>
-																<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-															</section>
-														</div>
-													</div>
-													<div class="row">
-														<div class="6u">
-															<section>
-																<h3 class="fa fa-picture-o">Pretium phasellus justo lorem</h3>
-																<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-															</section>
-														</div>
-														<div class="6u">
-															<section>
-																<h3 class="fa fa-cog">Tempus sed pretium orci</h3>
-																<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-															</section>
-														</div>
-													</div>
-													<div class="row">
-														<div class="6u">
-															<section>
-																<h3 class="fa fa-wrench">Aliquam consequat et feugiat</h3>
-																<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-															</section>
-														</div>
-														<div class="6u">
-															<section>
-																<h3 class="fa fa-check">Dolore laoreet aliquam mattis</h3>
-																<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-															</section>
-														</div>
-													</div>
+													</a>
+													<div style="display: block; clear: both; height: 2em; width: 100%;"></div>
+													{% endfor %}
 												</div>
 											</div>
 											<ul class="actions actions-centered">
-												<li><a href="#" class="button button-style1 button-big">Get Started</a></li>
-												<li><a href="#" class="button button-style2 button-big">More Info</a></li>
+												<li><a href="/thoughts/" class="button button-style1 button-big">Read More</a></li>
 											</ul>
 										</section>
 									<!-- /Features -->
@@ -153,57 +152,3 @@ tagline: This is an awesome tagline
 				</div>
 			</div>
 		<!-- /Main Wrapper -->
-		
-		<!-- Highlights Wrapper -->
-			<div class="wrapper wrapper-style3">
-				<div class="title">The Endorsements</div>
-				<div class="container">
-					<div class="row">
-						<div class="12u">
-							
-							<!-- Highlights -->
-								<div id="highlights">
-									<div>
-										<div class="row">
-											<div class="4u">
-												<section class="highlight highlight-one">
-													<a href="http://fav.me/d59i3b3" class="image image-full"><img src="images/pic02.jpg" alt="" /></a>
-													<h3><a href="#">Aliquam diam consequat</a></h3>
-													<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-													<ul class="actions">
-														<li><a href="#" class="button button-style1">Learn More</a></li>
-													</ul>
-												</section>
-											</div>
-											<div class="4u">
-												<section class="highlight highlight-two">
-													<a href="http://fav.me/d4tqyby" class="image image-full"><img src="images/pic03.jpg" alt="" /></a>
-													<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-													<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-													<ul class="actions">
-														<li><a href="#" class="button button-style1">Learn More</a></li>
-													</ul>
-												</section>
-											</div>
-											<div class="4u">
-												<section class="highlight highlight-three">
-													<a href="http://fav.me/d5w2dot" class="image image-full"><img src="images/pic04.jpg" alt="" /></a>
-													<h3><a href="#">Mattis tempus lorem</a></h3>
-													<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
-													<ul class="actions">
-														<li><a href="#" class="button button-style1">Learn More</a></li>
-													</ul>
-												</section>
-											</div>
-										</div>
-									</div>
-								</div>
-							<!-- /Highlights -->
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		<!-- /Highlights Wrapper -->
-
-{% include footer.html %}
