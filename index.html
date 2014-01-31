@@ -1,19 +1,24 @@
 ---
 layout: homepage
-image: '/asseets/images/homebanner.jpg'
+image: ''
 
 about-color: '#1abc9c'
 about-title: 'My World and I'
+
+articles-color: '#ecf0f1'
+articles-title: 'Articles'
+articles-description: 'Big Scary Title'
+articles-sub-tag: 'These are fascinating articles'
 
 thoughts-color: '#fafafa'
 thoughts-title: 'Thoughts'
 thoughts-description: 'This is what i think of my thoughts'
 thoughts-sub-tag: 'This is very deep I know'
 
-articles-color: '#ecf0f1'
-articles-title: 'Articles'
-articles-description: 'Big Scary Title'
-articles-sub-tag: 'These are fascinating articles'
+misc-color: '#2c3e50'
+misc-title: 'Miscellaneous'
+misc-description: 'This is a miscellaneous title'
+misc-sub-tag: 'Miscellaneous misc tagline'
 
 ---
 		
@@ -140,6 +145,57 @@ articles-sub-tag: 'These are fascinating articles'
 											</div>
 											<ul class="actions actions-centered">
 												<li><a href="/thoughts/" class="button button-style1 button-big">Read More</a></li>
+											</ul>
+										</section>
+									<!-- /Features -->
+									
+								</div>
+							<!-- /Main -->
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- /Main Wrapper -->
+		<!-- Main Wrapper -->
+			<div id="misc" class="wrapper wrapper-style2" style="background-color: {{ page.misc-color }}; background-image: url('/assets/images/overlay.png');">
+				<div class="title" style="background-color: {{ page.misc-color }}; color: #ffffff; background-image: url('/assets/images/overlay.png');">{{ page.misc-title }}</div>
+				<div class="container">
+					<div class="row">
+						<div class="12u">
+							
+							<!-- Main -->
+								<div id="main">
+									
+									
+									<!-- Features -->
+										<section id="features">
+											<header class="style1">
+												<h2 style="color: #ffffff;">{{ page.misc-description }}</h2>
+												<p class="byline" style="color: #282b34">{{ page.misc-sub-tag }}</p>
+											</header>
+											<!-- Image -->
+										<div class="image image-featured">
+											<img src="/assets/images/misc-banner.jpg" alt="" />
+										</div>
+									<!-- /Image -->
+											<div class="feature-list">
+												<div>
+												{% for post in site.categories.misc limit:5 %}
+													<a href="{{ post.url }}" title="{{ post.title }}" style="text-decoration: none;">
+														<div class="12u">
+															<section style="border-top: 1px solid #282b34;">
+																<h3 class="fa fa-pencil" style="color: #e97770 !important;">{{ post.title }}</h3>
+																<p style="color: #b1b4b9;">{{ post.summary }}</p>
+															</section>
+														</div>
+													</a>
+													<div style="display: block; clear: both; height: 2em; width: 100%;"></div>
+													{% endfor %}
+												</div>
+											</div>
+											<ul class="actions actions-centered">
+												<li><a href="/misc/" class="button button-style1 button-big" style="">Read More</a></li>
 											</ul>
 										</section>
 									<!-- /Features -->

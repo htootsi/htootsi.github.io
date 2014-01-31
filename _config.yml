@@ -1,20 +1,17 @@
 name: 'Helen Tootsi'
 tageline: 'This is the tagline of the site'
-
+pygments: true
+markdown: kramdown
+paginate: 5
+version: 0.9
 
 seo:
   author: 'Helen Tootsi'
   description: ''
   keywords: ''
 
-contact:
-  phone: '+1 (202) 258 2640'
-  email: 'sayhi@bivee.co'
-
-pygments: true
-markdown: kramdown
-paginate: 10
-version: 0.9
+author:
+  bio: 'Your bio comes here'
 
 url: ''
 permalink: /:year/:title

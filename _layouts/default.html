@@ -1,0 +1,128 @@
+{% include header.html %}
+<body class="right-sidebar">
+    <!-- Header Wrapper -->
+      <div id="header-wrapper" class="wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="12u">
+            
+              <!-- Header -->
+                <div id="header">
+             
+                  <!-- Logo -->
+                    <div id="logo">
+                      <h1><a href="#">{{ site.name }}</a></h1>
+                      <span class="byline">{{ site.tagline }}</span>
+                    </div>
+                  <!-- /Logo -->
+                  
+                  <!-- Nav -->
+                    <nav id="nav">
+                      <ul style="box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,1.0); background: rgba(0,0,0,0.15);">
+{% include nav.html %}                       
+                      </ul>
+                    </nav>
+
+                  <!-- /Nav -->
+
+                </div>
+              <!-- /Header -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- /Header Wrapper -->
+      
+    <!-- Main Wrapper -->
+      <div class="wrapper wrapper-style2">
+        <div class="title">{% if page.heading %}{{ page.heading }}{% else %}{{ page.categories }}{% endif %}</div>
+        <div class="container">
+          <div class="row">
+            <div class="12u">          
+              <!-- Main -->
+                <div id="main">
+                  <div>
+                    <div class="row">
+                      <div class="8u skel-cell-important">
+                      
+                        <!-- Content -->
+                          <div id="content">
+                            <article class="is is-post">
+                              <header class="style1">
+                                <h2>{{ page.title }}</h2>
+                                {% if page.subtitle %} <span class="byline">{{ page.subtitle }}</span>{% endif %}
+                              </header>
+{{ content }}
+                            </article>
+                          </div>
+                        <!-- /Content -->
+                      </div>
+                      <div class="4u">
+                        
+                        <!-- Sidebar -->
+                          <div id="sidebar">
+                            <section class="is">
+                              <header>
+                                <h2>About Me</h2>
+                                <img src="/assets/images/helen.jpg" style="width: 80px; height: 80px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; float: left" />
+                              </header>
+                              <p style="padding-left: 90px;">{{ site.author.bio }}</p>
+                              <a href="/about/" class="button button-style1" style="font-size: 70%">Learn More</a>
+                            </section>
+                            <hr>
+                            <section class="is">
+                              <header>
+                                <h2>Other Articles</h2>
+                              </header>
+                              <ul class="style2">
+                                {% for post in site.categories.articles limit:2 %}
+                                <li>
+                                  <article>
+                                    <a href="{{ post.url }}" style="text-decoration:none;">
+                                      <h3>{{ post.title }}</h3>
+                                      <p>{{ post.summary }}</p>
+                                    </a>
+                                    <a href="/articles/" style="color: #e97770; text-decoration: none;">More Articles</a>
+                                  </article>
+                                </li>
+                                {% endfor %}
+                                {% for post in site.categories.thoughts limit:1 %}
+                                <li>
+                                  <article>
+                                    <a href="{{ post.url }}" style="text-decoration:none;">
+                                      <h3>{{ post.title }}</h3>
+                                      <p>{{ post.summary }}</p>
+                                    </a>
+                                  <a href="/thoughts/" style="color: #e97770; text-decoration: none;">More Thoughts</a>
+                                  </article>
+                                </li>
+                                {% endfor %}
+                                {% for post in site.categories.misc limit:1 %}
+                                <li>
+                                  <article>
+                                    <a href="{{ post.url }}" style="text-decoration:none;">
+                                      <h3>{{ post.title }}</h3>
+                                      <p>{{ post.summary }}</p>
+                                    </a>
+                                    <a href="/misc/" style="color: #e97770; text-decoration: none;">More Miscellaneous</a>
+                                  </article>
+                                  
+                                </li>
+                                {% endfor %}
+                              </ul>
+                            </section>
+                          </div>
+                        <!-- /Sidebar -->                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <!-- /Main -->
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- /Main Wrapper -->
+{% include footer.html %}
