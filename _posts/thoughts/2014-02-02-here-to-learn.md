@@ -10,6 +10,7 @@ summary: Here to learn - story about why I screw up
 permalink:
 ---
 
+
 ![here to learn](/assets/images/post/robotdoll.jpg)
 Californication, Season 5, episode 4, 2012
 

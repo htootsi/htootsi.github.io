@@ -17,9 +17,9 @@ url: ''
 permalink: /:year/:title
 
 social:
-  fb: 'tootsi'
-  tw: 'tootsi'
-  in: 'tootsi'
+  fb: 
+  tw: 'http://www.twitter.com/helentootsi'
+  in: 'http://uk.linkedin.com/in/helentootsi'
   insta: 'http://www.instagram.com/htootsi'
 
 google:
