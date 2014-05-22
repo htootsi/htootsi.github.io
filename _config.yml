@@ -17,7 +17,11 @@ url: ''
 permalink: /:year/:title
 
 social:
+<<<<<<< HEAD
   fb:
+=======
+  fb: 
+>>>>>>> FETCH_HEAD
   tw: 'http://www.twitter.com/helentootsi'
   in: 'http://uk.linkedin.com/in/helentootsi'
   insta: 'http://www.instagram.com/htootsi'
