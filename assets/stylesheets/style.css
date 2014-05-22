@@ -993,7 +993,7 @@ textarea {
 .slides {
   position: relative;
   width: 100%;
-  padding-bottom: 10rem;
+  min-height: 100%;
   overflow: scroll;
 }
 .slides .slides-container {
