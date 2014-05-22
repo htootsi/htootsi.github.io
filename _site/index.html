@@ -1,335 +1,79 @@
 <!doctype html>
-<html lang="en">
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+
 <head>
-  
-  <title>Helen Tootsi || </title>
-  
-  <!-- // Site Info
-  ====================================
-  
-  Version:  0.9
-  
-  Launch:   
-  Updated:  02 February 2014
-  
-  Author:   Helen Tootsi
-  
-  Notes:    Congratulations! You are a nerd like us!
+
+    <title>Nicholas Kingston || </title>
+
+    <!-- // Site Info
+    ====================================
+
+    Version:  0.9
+
+    Launch:   
+    Updated:  22 May 2014
+
+    Author:   Nicholas Kingston
+
+    Notes:    Congratulations! You are a nerd like us!
             Maybe check out the github page?
 
-  Git:      http://www.github.com/
-  
-  ====================================
-  // -->
-  
-  <!-- Primary Metadata  -->
-  <meta charset="utf-8">
-  <meta name="description" content=""/>
-  <meta name="keywords" content=", "/>
-  <meta name="author" content="Helen Tootsi"/>
-  <meta name='viewport' content='width=device-width, target-densitydpi=160dpi, initial-scale=1'>
-  <meta name="google-site-verification" content=""/>
-  
-  <!-- Social Metadata  -->
-  <meta property="og:title" content=""/>
-  <meta property="og:description" content=""/>
-  <meta property="og:image" content="og-image.jpg"/>
-  <meta property="og:url" content="/index.html"/>
-  
-  <!-- Robots & Favicons  -->
-  <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png" />
-  <meta name="robots" content="index, follow"/>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    
-  <!-- JS CSS and Fonts  -->
-  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,900" rel="stylesheet" />
-  <script src="/assets/javascript/jquery.min.js"></script>
-  <script src="/assets/javascript/jquery.dropotron.min.js"></script>
-  <script src="/assets/javascript/config.js"></script>
-  <script src="/assets/javascript/skel.min.js"></script>
-  <script src="/assets/javascript/skel-panels.min.js"></script>
-  <noscript>
-    <link rel="stylesheet" href="/assets/css/skel-noscript.css" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="/assets/css/style-desktop.css" />
-  </noscript>
+    Git:      http://www.github.com/
 
-  <style>
-    img { max-width: 100%; }
-    p, ul, ol, dl, table, blockquote, form { margin-bottom: 0.8em; }
-  </style>
+    ====================================
+    // -->
+    <!-- CSS and Fonts  -->
+    <link rel="stylesheet" href="/assets/stylesheets/style.css" />
 
 </head>
-<body class="homepage">
-    <!-- Header Wrapper -->
-      <div id="header-wrapper" class="wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="12u">
-            
-              <!-- Header -->
-                <div id="header">
-             
-                  <!-- Logo -->
-                    <div id="logo">
-                      <h1><a href="#">Helen Tootsi</a></h1>
-                      <span class="byline"></span>
+
+<body>
+
+    <nav role="navigation">
+        <a href="/" title="Homepage of www.helentootsi.com" class="logo" target="_self"><img src="/assets/images/logo.png" /></a>
+        <ul>
+            <li class="fb"><a href=""><i class="icon-facebook"></i></a></li>
+            <li class="tw"><a href=""><i class="icon-twitter"></i></a></li>
+            <li class="gp"><a href=""><i class="icon-instagram"></i></a></li>
+            <li class="ro"><button id="trigger-overlay" type="button"><i class="icon-reorder"></i></button></li>
+        </ul>
+    </nav> 
+    <div id="overlay-menu" class="overlay-menu overlay-scale">
+        <button type="button" id="overlay-close">Close</button>
+        <nav>
+            <ul>
+                <li><a href="/test">Link 1</a></li>
+                <li><a href="/test">Link 2</a></li>
+                <li><a href="/test">Link 3</a></li>
+                <li><a href="/test">Link 4</a></li>
+                <li><a href="/test">Link 5</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div id="container">
+
+
+            <section class="home">
+                <div class="overlay"></div>
+                <article class="grid">
+                    <div class="columns large-12">
+                        <img src="assets/images/logo-full.png" class="logo img-m" />
+                        <h1>Creative<br/>Film Production<br/>Writer</h1>
                     </div>
-                  <!-- /Logo -->
-                  
-                  <!-- Nav -->
-                    <nav id="nav">
-                      <ul style="box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,1.0); background: rgba(0,0,0,0.15);">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/articles/">Articles</a></li>
-                        <li><a href="/thoughts/">Thoughts</a></li>
-                        <li><a href="/misc/">Misc</a></li>                       
-                      </ul>
-                    </nav>
+                </article>
+            </section>
 
-                  <!-- /Nav -->
+    </div>
 
-                </div>
-              <!-- /Header -->
+    <!-- JS  -->
+    <script src="/assets/javascripts/vendor/jquery.min.js"></script>
+    <script src="/assets/javascripts/vendor/jquery.superslides.js"></script>
+    <script src="/assets/javascripts/main.js"></script>
 
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- /Header Wrapper -->
-		<!-- Intro Wrapper -->
-    <div id="intro-wrapper" class="wrapper wrapper-style1" style="background-color: #3D6661;">
-      <div class="title" style="background-color: #3D6661;">My World and I</div>
-        <div class="container">
-          <div class="row">
-            <div class="12u">
-              
-              <!-- Intro -->
-              <section id="intro">
-
-
-
-                  <p class="style1">So in case you were wondering what this is all about ...</p>
-                  <p class="style2">
-                    This is the website of Helen Tootsi, and yes, it looks freaking amazing
-                  </p>
-                  <p class="style3">There are a lot of things you need to know about me, like for example, the links below will take you to all my usual social hangouts</p>
-               
-				<ul class="actions">
-					
-					<li><a href="http://www.twitter.com/helentootsi"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="http://uk.linkedin.com/in/helentootsi"><i class="fa fa-linkedin"></i></a></li>
-					<li><a href="http://www.instagram.com/htootsi"><i class="fa fa-instagram"></i></a></li>
-				</ul>
-				<ul class="actions">
-					<li><a href="/about/" class="button button-style1">About Me</a></li>
-				</ul>
- 			  </section>
-              <!-- /Intro -->
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- /Intro Wrapper -->
-  </div>
-
-
-
-
-		<!-- Highlights Wrapper -->
-			<div id="articles" class="wrapper wrapper-style3" style="background-color: #ecf0f1;">
-				<div class="title" style="background-color: #ecf0f1;">Articles</div>
-				<div class="container">
-					<div class="row">
-						<div class="12u">
-
-							<header class="style1">
-								<h2>Big Scary Title</h2>
-								<p class="byline">These are fascinating articles</p>
-							</header>
-							<!--<div class="image image-featured">
-								<img src="/assets/images/articles-banner.jpg" alt="" />
-							</div>-->
-							
-							<!-- Highlights -->
-								<div id="highlights" style="text-align: center;">
-									<!-- Image -->
-										<div class="image image-featured" style="max-width: 1000px; display: inline-block;">
-											<img src="/assets/images/articles-banner.jpg" alt="" />
-										</div>
-									<!-- /Image -->
-									<div>
-										<div class="row">
-											
-											<div class="4u">
-												<section class="highlight">
-<<<<<<< HEAD
-													<h3><a href="/2014/Hello-World" style="color:#2c3e50;">My First Post</a></h3>
-													<p>This is a short summery for this article. It is very interesting, you should read it.</p>
-													<ul class="actions">
-														<li><a href="/2014/Hello-World" class="button button-style1" style="font-size: 60%; background: #95a5a6;">Continue Reading</a></li>
-=======
-													<h3><a href="/2014/blog-test" style="color:#2c3e50;">YESAVGAVAWE</a></h3>
-													<p>This is a short summery for this article. It is very interesting, you should read it</p>
-													<ul class="actions">
-														<li><a href="/2014/blog-test" class="button button-style1" style="font-size: 60%; background: #95a5a6;">Continue Reading</a></li>
->>>>>>> FETCH_HEAD
-													</ul>
-													<div style="display: inline-block; clear: both; height: 2em; width: 30%; border-top: 1px solid #cfcfcf; margin-top: 2em;"></div>
-												</section>
-											</div>
-											
-										</div>
-									</div>
-								</div>
-								<ul class="actions actions-centered">
-									<li><a href="#" class="button button-style1 button-big" style="background: #34495e;">Read More</a></li>
-								</ul>
-							<!-- /Highlights -->			
-						</div>
-					</div>
-				</div>
-			</div>
-		<!-- /Highlights Wrapper -->
-
-
-
-
-		<!-- Main Wrapper -->
-			<div id="thoughts" class="wrapper wrapper-style2" style="background-color: #fafafa;">
-				<div class="title" style="background-color: #fafafa">Thoughts</div>
-				<div class="container">
-					<div class="row">
-						<div class="12u">
-							
-							<!-- Main -->
-								<div id="main">
-									
-									
-									<!-- Features -->
-										<section id="features">
-											<header class="style1">
-												<h2>This is what i think of my thoughts</h2>
-												<p class="byline">This is very deep I know</p>
-											</header>
-											<!-- Image -->
-										<div class="image image-featured">
-											<img src="/assets/images/thoughts-banner.jpg" alt="" />
-										</div>
-									<!-- /Image -->
-											<div class="feature-list">
-												<div>
-												
-													<a href="/2014/here-to-learn" title="Here to learn" style="text-decoration: none;">
-														<div class="12u">
-															<section>
-																<h3 class="fa fa-book">Here to learn</h3>
-																<p>Here to learn - story about why I screw up</p>
-															</section>
-														</div>
-													</a>
-													<div style="display: block; clear: both; height: 2em; width: 100%;"></div>
-													
-												</div>
-											</div>
-											<ul class="actions actions-centered">
-												<li><a href="/thoughts/" class="button button-style1 button-big">Read More</a></li>
-											</ul>
-										</section>
-									<!-- /Features -->
-									
-								</div>
-							<!-- /Main -->
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		<!-- /Main Wrapper -->
-		<!-- Main Wrapper -->
-			<div id="misc" class="wrapper wrapper-style2" style="background-color: #2c3e50; background-image: url('/assets/images/overlay.png');">
-				<div class="title" style="background-color: #2c3e50; color: #ffffff; background-image: url('/assets/images/overlay.png');">Miscellaneous</div>
-				<div class="container">
-					<div class="row">
-						<div class="12u">
-							
-							<!-- Main -->
-								<div id="main">
-									
-									
-									<!-- Features -->
-										<section id="features">
-											<header class="style1">
-												<h2 style="color: #ffffff;">This is a miscellaneous title</h2>
-												<p class="byline" style="color: #282b34">Miscellaneous misc tagline</p>
-											</header>
-											<!-- Image -->
-										<div class="image image-featured">
-											<img src="/assets/images/misc-banner.jpg" alt="" />
-										</div>
-									<!-- /Image -->
-											<div class="feature-list">
-												<div>
-												
-													<a href="/2014/blog-test" title="This is a blog post" style="text-decoration: none;">
-														<div class="12u">
-															<section style="border-top: 1px solid #282b34;">
-																<h3 class="fa fa-pencil" style="color: #e97770 !important;">This is a blog post</h3>
-																<p style="color: #b1b4b9;">This is a short summery for this article. It is very interesting, you should read it</p>
-															</section>
-														</div>
-													</a>
-													<div style="display: block; clear: both; height: 2em; width: 100%;"></div>
-													
-												</div>
-											</div>
-											<ul class="actions actions-centered">
-												<li><a href="/misc/" class="button button-style1 button-big" style="">Read More</a></li>
-											</ul>
-										</section>
-									<!-- /Features -->
-									
-								</div>
-							<!-- /Main -->
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		<!-- /Main Wrapper -->
-
-    <!-- Footer Wrapper -->
-      <div id="footer-wrapper" class="wrapper">
-        <div class="title">The End</div>
-        <div class="container">
-          <div class="row">
-            <div class="12u">
-
-              <!-- Footer -->
-                <div id="footer">
-                  <header class="style1">
-                    <h2>You reached the end of the page!</h2>
-                    <p class="byline">
-                      Congratulations! You read through this page without a problem! Fascinating information here right? You are that much smarter now for having read it!
-                    </p>
-                  </header>
-                  <ul class="actions">
-                    
-                    <li><a href="http://www.twitter.com/helentootsi"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="http://uk.linkedin.com/in/helentootsi"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="http://www.instagram.com/htootsi"><i class="fa fa-instagram"></i></a></li>
-                  </ul>
-                </div>
-              <!-- /Footer -->
-            
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- /Footer Wrapper -->
-
-  </body>
+</body>
 </html>

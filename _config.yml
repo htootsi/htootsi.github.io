@@ -1,4 +1,4 @@
-name: 'Helen Tootsi'
+name: 'Nicholas Kingston'
 tageline: 'This is the tagline of the site'
 pygments: true
 markdown: kramdown
@@ -6,26 +6,27 @@ paginate: 5
 version: 0.9
 
 seo:
-  author: 'Helen Tootsi'
+  author: 'Nicholas Kingston'
   description: ''
   keywords: ''
 
 author:
-  bio: 'Your bio comes here'
+  bio: ''
 
 url: ''
 permalink: /:year/:title
 
 social:
-<<<<<<< HEAD
   fb:
-=======
-  fb: 
->>>>>>> FETCH_HEAD
-  tw: 'http://www.twitter.com/helentootsi'
-  in: 'http://uk.linkedin.com/in/helentootsi'
-  insta: 'http://www.instagram.com/htootsi'
+  tw: 'http://www.twitter.com/'
+  in: 'http://uk.linkedin.com/in/'
+  insta: 'http://www.instagram.com/'
 
 google:
   analytics : ''
   verification : ''
+
+assets:
+  img: '/assets/images/'
+  css: '/assets/stylesheets/'
+  js: '/assets/javascripts/'  

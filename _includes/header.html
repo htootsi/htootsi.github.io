@@ -1,63 +1,58 @@
 <!doctype html>
-<html lang="en">
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+
 <head>
-  
-  <title>{{ site.name}} || {% if page.title %}{{ page.title }}{% else %}{{ site.tagline }}{% endif %}</title>
-  
-  <!-- // Site Info
-  ====================================
-  
-  Version:  {{ site.version }}
-  
-  Launch:   
-  Updated:  {{ site.time | date_to_long_string }}
-  
-  Author:   {{ site.seo.author }}
-  
-  Notes:    Congratulations! You are a nerd like us!
+
+    <title>{{ site.name}} || {% if page.title %}{{ page.title }}{% else %}{{ site.tagline }}{% endif %}</title>
+
+    <!-- // Site Info
+    ====================================
+
+    Version:  {{ site.version }}
+
+    Launch:   
+    Updated:  {{ site.time | date_to_long_string }}
+
+    Author:   {{ site.seo.author }}
+
+    Notes:    Congratulations! You are a nerd like us!
             Maybe check out the github page?
 
-  Git:      http://www.github.com/{{ site.social.github }}
-  
-  ====================================
-  // -->
-  
-  <!-- Primary Metadata  -->
-  <meta charset="utf-8">
-  <meta name="description" content="{% if page.description == null %}{{ site.seo.description }}{% else %}{{ page.description }}{% endif %}"/>
-  <meta name="keywords" content="{{ site.seo.tags }}, {{ page.tags }}"/>
-  <meta name="author" content="{% if post %}{{ post.author }}{% else %}{{ site.seo.author }}{% endif %}"/>
-  <meta name='viewport' content='width=device-width, target-densitydpi=160dpi, initial-scale=1'>
-  <meta name="google-site-verification" content="{{ site.google.verification }}"/>
-  
-  <!-- Social Metadata  -->
-  <meta property="og:title" content="{{ page.title }}"/>
-  <meta property="og:description" content="{% if page.description == null %}{{ site.seo.description }}{% else %}{{ page.description }}{% endif %}"/>
-  <meta property="og:image" content="{{ site.assets.img }}og-image.jpg"/>
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
-  
-  <!-- Robots & Favicons  -->
-  <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png" />
-  <meta name="robots" content="index, follow"/>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    
-  <!-- JS CSS and Fonts  -->
-  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,900" rel="stylesheet" />
-  <script src="/assets/javascript/jquery.min.js"></script>
-  <script src="/assets/javascript/jquery.dropotron.min.js"></script>
-  <script src="/assets/javascript/config.js"></script>
-  <script src="/assets/javascript/skel.min.js"></script>
-  <script src="/assets/javascript/skel-panels.min.js"></script>
-  <noscript>
-    <link rel="stylesheet" href="/assets/css/skel-noscript.css" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link rel="stylesheet" href="/assets/css/style-desktop.css" />
-  </noscript>
+    Git:      http://www.github.com/{{ site.social.github }}
 
-  <style>
-    img { max-width: 100%; }
-    p, ul, ol, dl, table, blockquote, form { margin-bottom: 0.8em; }
-  </style>
+    ====================================
+    // -->
+    <!-- CSS and Fonts  -->
+    <link rel="stylesheet" href="/assets/stylesheets/style.css" />
 
 </head>
+
+<body>
+
+    <nav role="navigation">
+        <a href="/" title="Homepage of www.helentootsi.com" class="logo" target="_self"><img src="/assets/images/logo.png" /></a>
+        <ul>
+            <li class="fb"><a href=""><i class="icon-facebook"></i></a></li>
+            <li class="tw"><a href=""><i class="icon-twitter"></i></a></li>
+            <li class="gp"><a href=""><i class="icon-instagram"></i></a></li>
+            <li class="ro"><button id="trigger-overlay" type="button"><i class="icon-reorder"></i></button></li>
+        </ul>
+    </nav> 
+    <div id="overlay-menu" class="overlay-menu overlay-scale">
+        <button type="button" id="overlay-close">Close</button>
+        <nav>
+            <ul>
+                <li><a href="/test">Link 1</a></li>
+                <li><a href="/test">Link 2</a></li>
+                <li><a href="/test">Link 3</a></li>
+                <li><a href="/test">Link 4</a></li>
+                <li><a href="/test">Link 5</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div id="container">

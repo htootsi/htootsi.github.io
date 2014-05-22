@@ -1,0 +1,148 @@
+// Base Styles
+// --------------------------------------------------------------------------
+
+body {
+    background: @white;
+}
+
+// Layout
+// --------------------------------------------------------------------------
+
+@social-btn-size: 1.25rem;
+
+#container {
+    position: absolute;
+    top: 3.125rem;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+
+// General Rules
+// --------------------------------------------------------------------------
+
+a { 
+    text-decoration: none;
+    .transition;
+}
+
+// Vertically Center Elements
+// --------------------------------------------------------------------------
+
+.table {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index:2;
+}
+.inner {
+    display: table-cell;
+    vertical-align: middle; 
+}
+
+
+// Content Area
+// --------------------------------------------------------------------------
+
+h1,h2,h3,h4,h5,h6,p {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: center;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+
+p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
+[role="main"] {
+    position: relative;
+    height: 100%;
+    max-width: @max-width;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+
+    section {
+        background: @white-light;
+        margin-top: 5.125rem;
+    }
+    article {
+        position: relative;
+        padding-top: 2rem;
+        padding-bottom: 2rem; 
+    }
+    footer {
+        position: relative;
+        background: @black;
+    }
+    h1,h2,h3,h4,h5,h6,p {
+        text-align: left;
+    }
+}
+
+
+
+// Colour Scheme
+// --------------------------------------------------------------------------
+
+#work {
+
+}
+
+
+// Home Page Styles
+// --------------------------------------------------------------------------
+
+.home {
+    .table;
+    position: relative;
+    background: url(../images/cover.jpg) center no-repeat;
+    height: 100%;
+    text-align: center;
+    .background-size;
+    .overlay {
+        position: absolute;
+        background: url(../images/stripe.png) center center repeat fade(@black,30%);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: " ";
+        z-index: 1;
+    }
+    article {
+        .inner;
+        color: @white;
+        position: relative;
+        z-index: 2;
+        &.dark {
+            color: @black-light;
+        }
+        h1 {
+            line-height: 1.5;
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
+        }
+    }
+    .logo {
+        background: fade(@black-dark, 60%);
+        display: inline-block;
+        margin-bottom: 3rem;
+        margin-top: -5rem;
+        width: 100%;
+        max-width: 460px;
+        padding: 1rem 2rem;
+        .radius(0.5rem);
+    }
+}

@@ -1,0 +1,74 @@
+// Social Colors
+// --------------------------------------------------------------------------
+
+@facebook:      #3B5998;
+@twitter:       #4099FF;
+@google:        #d34836;
+@linkedin:      #d34836;
+@pinterest:     #c92228;
+
+
+// Social Styles
+// --------------------------------------------------------------------------
+
+.fb {
+    @color: @facebook;
+    background: @color;
+    &:hover {
+        background: lighten(@color, 10%);
+    }
+}
+.tw {
+    @color: @twitter;
+    background: @color;
+    &:hover {
+        background: lighten(@color, 10%);
+    }
+}
+.gp {
+    @color: @google;
+    background: @color;
+    &:hover {
+        background: lighten(@color, 10%);
+    }
+}
+
+.top {
+    @color: @black-dark;
+    background: @color;
+    &:hover {
+        background: @black;
+    }
+}
+
+
+// Social Sidebar Styles
+// --------------------------------------------------------------------------
+
+#social {
+    @from-top: 3.125rem;
+    position: absolute;
+    right: -1 * @social-btn-size;
+    top: @from-top;
+    width: @social-btn-size;
+    z-index: 10 !important;
+    &.position-fixed {
+        position: fixed;
+        top: @from-top;
+        right: 0;
+        z-index: 10000;
+    }
+    a {
+        display: block;
+        color: @white;
+        width: @social-btn-size;
+        height: @social-btn-size;
+        font-size: 1.4rem;
+        padding: 0.5em;
+        text-align: center;
+        i {
+            height: 2em; 
+            width: 2em;
+        }
+    }
+}
