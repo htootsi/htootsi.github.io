@@ -518,7 +518,7 @@ textarea {
   display: block;
   position: fixed;
   top: 0;
-  padding: 0 2rem;
+  padding: 0;
   z-index: 10;
   height: 3.125rem;
   background: #000000;
