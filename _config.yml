@@ -1,4 +1,4 @@
-name: 'Nicholas Kingston'
+name: 'Helen Tootsi'
 tageline: 'This is the tagline of the site'
 pygments: true
 markdown: kramdown
@@ -6,7 +6,7 @@ paginate: 5
 version: 0.9
 
 seo:
-  author: 'Nicholas Kingston'
+  author: 'Helen Tootsi'
   description: ''
   keywords: ''
 
