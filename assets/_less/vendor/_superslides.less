@@ -92,6 +92,7 @@ nav.slides-pagination {
         position: relative;
         display: inline-block;
         width: 10em;
+        vertical-align: top;
         padding-top: 5em;
         padding-left: 1em;
         padding-right: 1em;
@@ -134,11 +135,23 @@ nav.slides-pagination {
     }
 }
 
-nav.slides-pagination {
-    &:before {
-        background: @color1-dark;
+#film {
+    nav.slides-pagination {
+        &:before {
+            background: @color2-dark;
+        }
+        a:before {
+            background: @color2-dark;
+        }
     }
-    a:before {
-        background: @color1-dark;
+}
+#television {
+    nav.slides-pagination {
+        &:before {
+            background: @color4-dark;
+        }
+        a:before {
+            background: @color4-dark;
+        }
     }
 }

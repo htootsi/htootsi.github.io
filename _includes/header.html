@@ -33,7 +33,7 @@
 
 </head>
 
-<body>
+<body{% if page.id %} id="{{ page.id }}"{% endif %}>
 
     <nav role="navigation">
         <a href="/" title="Homepage of www.helentootsi.com" class="logo" target="_self"><img src="/assets/images/logo.png" /></a>
@@ -47,14 +47,13 @@
         <button type="button" id="overlay-close">x</button>
         <nav>
             <ul>
-                <li><a href="/test">Link 1</a></li>
-                <li><a href="/test">Link 2</a></li>
-                <li><a href="/test">Link 3</a></li>
-                <li><a href="/test">Link 4</a></li>
-                <li><a href="/test">Link 5</a></li>
+                <li class="film"><a href="/film">Film</a></li>
+                <li class="television"><a href="/television">Television</a></li>
+                <li class="creative"><a href="/film">Creative</a></li>
+                <li class="writing"><a href="/film">Writing</a></li>
+                <li class="education"><a href="/film">Education</a></li>
+                <li class="other"><a href="/film">All Other</a></li>
             </ul>
         </nav>
     </div>
-
-
     <div id="container">
