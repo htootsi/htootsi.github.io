@@ -1166,7 +1166,7 @@ nav.slides-pagination a:hover:after {
     font-size: 70%;
   }
   .home article h1 {
-    font-size: 2em;
+    font-size: 80%;
   }
   .home .logo {
     max-width: 270px;
@@ -1178,8 +1178,8 @@ nav.slides-pagination a:hover:after {
     display: block;
   }
   [role="main"] {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 10px !important;
+    padding-right: 10px  !important;
   }
 }
 @media only screen and (min-width: 30em) {
@@ -1187,8 +1187,8 @@ nav.slides-pagination a:hover:after {
     font-size: 80%;
   }
   [role="main"] {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 }
 @media only screen and (min-width: 48em) {
@@ -1212,13 +1212,17 @@ nav.slides-pagination a:hover:after {
     display: none !important;
   }
   [role="main"] {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
   }
 }
 @media only screen and (min-width: 64em) {
   body {
     font-size: 100%;
+  }
+  [role="main"] {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
   }
 }
 @media only screen and (min-width: 75em) {
