@@ -1,4 +1,4 @@
-<img src=“assets/image/logo.png” />
+#### <img src=“assets/image/logo.png” />
 
 Last Updated: June 5, 2014
 

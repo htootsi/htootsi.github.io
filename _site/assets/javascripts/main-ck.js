@@ -1,1 +1,0 @@
-$(".slides").superslides({slide_easing:"easeInOutCubic",slide_speed:800,pagination:!0,hashchange:!1,scrollable:!0,inherit_width_from:"#slides",inherit_height_from:"#slides"}),$("#trigger-overlay").click(function(){$("#overlay-menu").addClass("open")}),$("#overlay-close").click(function(){$("#overlay-menu").removeClass("open")});
