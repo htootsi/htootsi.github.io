@@ -1,14 +1,12 @@
 // Phone Screens (Large Portrait)
 // --------------------------------------------------------------------------
 
-@media only screen and (min-width: 25em) {
+@media only screen and (max-width: 30em) {
     body {
         font-size: 70%;
     }
-    .home article h1 {
-        font-size: 80%;
-    }
-    .home .logo {
+    .logo {
+        width: 100%;
         max-width: 270px;
     }
     .mobile {
@@ -27,11 +25,12 @@
 // Phone Screens (Landscape)
 // --------------------------------------------------------------------------
 
-@media only screen and (min-width: 30em) {
+@media only screen and (max-width: 48em) {
     body {
         font-size: 80%;
     }
     [role="main"] {
+        font-size: 80%;
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
@@ -41,7 +40,7 @@
 // Tablet Screens (Portrait)
 // --------------------------------------------------------------------------
 
-@media only screen and (min-width: 48em) {
+@media only screen and (max-width: 64em) {
     body {
         font-size: 90%;
     }
@@ -82,8 +81,3 @@
 // Screens (Desktop)
 // --------------------------------------------------------------------------
 
-@media only screen and (min-width: 75em) {
-    body {
-        font-size: 100%;
-    }
-}
