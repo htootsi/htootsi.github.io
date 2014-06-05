@@ -1,4 +1,4 @@
-<img src="/_assets/logo.png" width="250px" />
+<img src="/_assets/logo.png" width="450px" />
 
 Last Updated: June 5, 2014
 
