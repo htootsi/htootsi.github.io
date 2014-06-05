@@ -1,4 +1,4 @@
-<img src=“/_assets/logo.png” title=“logo Helen Tootsi” width=“250px” />
+<img src=“https://raw.githubusercontent.com/htootsi/htootsi.github.io/master/_assets/logo.png” title=“logo Helen Tootsi” width=“250px” />
 
 Last Updated: June 5, 2014
 
