@@ -16,7 +16,7 @@ Copyrighted Content ©
 
 ## <a name="summary"><a/>Summary
 
-The purpose of this document is to provide instruction and information into the structure and management of the GAR Reports.
+The purpose of this document is to provide instruction and information for helentootsi.com.
 
 ## <a name="edits"><a/>Making Edits
 
