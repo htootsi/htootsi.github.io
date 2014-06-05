@@ -1,4 +1,4 @@
-#### <img src=“assets/image/logo.png” />
+<img src=“/_assets/logo.png” width=“250” />
 
 Last Updated: June 5, 2014
 
