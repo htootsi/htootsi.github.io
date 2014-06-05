@@ -1,4 +1,4 @@
-<img src=“/_assets/logo.png” width=“250” />
+<img src=“/_assets/logo.png” title=“logo Helen Tootsi” width=“250px” />
 
 Last Updated: June 5, 2014
 
