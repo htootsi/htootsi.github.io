@@ -4,40 +4,15 @@ id: film
 permalink: /film/
 ---
 
-                <li title="Poll Diaries">
+                {% for post in site.categories.film %}
+                <li title="{{ post.title }}">
                     <div class="container" role="main">
-                        <h1>Poll Diaries</h1>
-                        <h3>Kordes Film GmbH Co. &dash; <em>Set Runner / Assistant Set Manager</em></h3>
-                        <p class="date">Jul &dash; Sep 2009</p>
+                        <h1>{{ post.title }}</h1>
+                        <h3>{{ post.company }}&dash; <em>{{ post.position }}</em></h3>
+                        <p class="date">{{ post.performed }}</p>
                         <div class="content">
-                            <p>Historical Drama filmed in Germany and Estonia</p>
-                            <h4>Awards</h4>
-                            <p>Rome Film Fest 2010 &dash; Politeama Catanzaro Award, Special Jury Prize (to the director)</p>
-                            <p>Bambi 2011 &dash; Best Actress
-                            <p>Bavarian Film Award 2011 &dash; Best Production Design, Best Actor, Best Young Actress</p>
-                            <p>German Film Awards 2011 &dash; Best Performance by an Actor in Supporting Role, Best Cinematography, Best Production Design, Best Costume Design</p>
-                            <p>German Film Critics Association Awards 2012 &dash; Best Cinematography</p>
+                            {{ post.content }}
                         </div>
                     </div>
                 </li>
-                <li title="Helisev Maja (House of Chime)">
-                    <div class="container" role="main">
-                        <h1>Helisev Maja (House of Chime) </h1>
-                        <h3>BFM &amp; EMTA &dash; <em>Director/ Scriptwriter</em></h3>
-                        <p class="date">Dec 2008 - Sept 2009</p>
-                        <div class="content">
-                            <p>Baltic Film and Media School in collaborations with Estonian National Music Academy and Estonian Public Broadcasting commissioned the half hour documentary to celebrate the 90th Anniversary of ENMA. 24 minute run time is fully filmed in Estonia, looking at the Music Academy through the eyes of current students. Responsibilities additional to creative input included scripting and coordinating the work of creative team. Overseeing the flow with editorial materials on the project.</p>
-                        </div>
-                    </div>
-                </li>
-                </li>
-                <li title="Run to Monaco">
-                    <div class="container" role="main">
-                        <h1>Run to Monaco</h1>
-                        <h3><em>On-Site Event Coordinator</em></h3>
-                        <p class="date">May 2012</p>
-                        <div class="content">
-                                <iframe src="//player.vimeo.com/video/45830193" width="700" height="394" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </li>
+                {% endfor %}

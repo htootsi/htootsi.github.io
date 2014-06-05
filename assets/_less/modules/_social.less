@@ -4,8 +4,9 @@
 @facebook:      #3B5998;
 @twitter:       #4099FF;
 @google:        #d34836;
-@linkedin:      #d34836;
+@linkedin:      #0e76a8;
 @pinterest:     #c92228;
+@instagram:     #3f729b;
 
 
 // Social Styles
@@ -13,31 +14,47 @@
 
 .fb {
     @color: @facebook;
-    background: @color;
+    background: @color !important;
     &:hover {
-        background: lighten(@color, 10%);
+        background: lighten(@color, 10%) !important;
     }
 }
 .tw {
     @color: @twitter;
-    background: @color;
+    background: @color !important;
     &:hover {
-        background: lighten(@color, 10%);
+        background: lighten(@color, 10%) !important;
     }
 }
 .gp {
     @color: @google;
-    background: @color;
+    background: @color !important;
     &:hover {
-        background: lighten(@color, 10%);
+        background: lighten(@color, 10%) !important;
+    }
+}
+
+.in {
+    @color: @linkedin;
+    background: @color !important;
+    &:hover {
+        background: lighten(@color, 10%) !important;
+    }
+}
+
+.is {
+    @color: @instagram;
+    background: @color !important;
+    &:hover {
+        background: lighten(@color, 10%) !important;
     }
 }
 
 .top {
     @color: @black-dark;
-    background: @color;
+    background: @color !important;
     &:hover {
-        background: @black;
+        background: @black !important;
     }
 }
 

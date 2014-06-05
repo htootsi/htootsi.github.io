@@ -6,17 +6,17 @@
 
 <head>
 
-    <title>{{ site.name}} || {% if page.title %}{{ page.title }}{% else %}{{ site.tagline }}{% endif %}</title>
+    <title>Helen Tootsi || Creative, Film Production, Writer</title>
 
     <!-- // Site Info
     ====================================
 
-    Version:  {{ site.version }}
+    Version:  0.9
 
     Launch:   
-    Updated:  {{ site.time | date_to_long_string }}
+    Updated:  05 June 2014
 
-    Author:   {{ site.seo.author }}
+    Author:   Helen Tootsi
 
     Notes:    Congratulations! You are a nerd like us!
                 Maybe check out the github page?
@@ -33,13 +33,13 @@
 
 </head>
 
-<body{% if page.id %} id="{{ page.id }}"{% endif %}>
+<body id="education">
 
     <nav role="navigation">
         <a href="/" title="Homepage of www.helentootsi.com" class="logo" target="_self"><img src="/assets/images/logo.png" alt="Helen Tootsi, Creative, Film Production, Writer" /></a>
         <ul>
-            <li class="in"><a href="{{ site.social.in }}" title="Helen Tootsi's Linkedin"><i class="icon-linkedin"></i></a></li>
-            <li class="is"><a href="{{ site.social.insta }}" title="Helen Tootsi's Instagram"><i class="icon-instagram"></i></a></li>
+            <li class="in"><a href="http://uk.linkedin.com/in/helentootsi" title="Helen Tootsi's Linkedin"><i class="icon-linkedin"></i></a></li>
+            <li class="is"><a href="http://www.instagram.com/htootsi" title="Helen Tootsi's Instagram"><i class="icon-instagram"></i></a></li>
             <li class="ro"><button id="trigger-overlay" type="button"><i class="icon-reorder"></i></button></li>
         </ul>
     </nav> 
@@ -57,3 +57,25 @@
         </nav>
     </div>
     <div id="container">
+    <div id="slides">
+        <div class="slides">
+            <ul class="slides-container">
+                
+            </ul>
+            <nav class="slides-navigation">
+                <a href="#" class="next"><i class="icon-arrow-right"></i></a>
+                <a href="#" class="prev"><i class="icon-arrow-left"></i></a>
+            </nav>
+        </div>
+    </div>
+
+
+    </div>
+
+    <!-- JS  -->
+    <script src="/assets/javascripts/vendor/jquery.min.js"></script>
+    <script src="/assets/javascripts/vendor/jquery.superslides.js"></script>
+    <script src="/assets/javascripts/main.js"></script>
+
+</body>
+</html>

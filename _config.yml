@@ -1,6 +1,6 @@
 name: 'Helen Tootsi'
-tageline: 'This is the tagline of the site'
-pygments: true
+tagline: 'Creative, Film Production, Writer'
+pygments: false
 markdown: kramdown
 paginate: 5
 version: 0.9
@@ -10,17 +10,14 @@ seo:
   description: ''
   keywords: ''
 
-author:
-  bio: ''
-
 url: ''
 permalink: /:year/:title
 
 social:
   fb:
   tw: 'http://www.twitter.com/'
-  in: 'http://uk.linkedin.com/in/'
-  insta: 'http://www.instagram.com/'
+  in: 'http://uk.linkedin.com/in/helentootsi'
+  insta: 'http://www.instagram.com/htootsi'
 
 google:
   analytics : ''
