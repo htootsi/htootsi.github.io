@@ -655,7 +655,6 @@ nav ul#menu li a:hover {
   padding-left: 0;
 }
 .category-list li h4 {
-  padding-left: 0 !important;
   text-transform: uppercase;
 }
 .category-list ul {
