@@ -1,83 +1,81 @@
 // Phone Screens (Large Portrait)
 // --------------------------------------------------------------------------
 
-@media only screen and (max-width: 30em) {
-    body {
-        font-size: 70%;
-    }
-    .logo {
-        width: 100%;
-        max-width: 270px;
-    }
-    .mobile {
-        display: none;
-    }
-    .desktop {
-        display: block;
-    }
-    [role="main"] {
-        padding-left: 10px !important;
-        padding-right: 10px  !important;
-    }
-}
 
 
 // Phone Screens (Landscape)
 // --------------------------------------------------------------------------
+    
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.5;
+        .font-text-bold;
+        color: @color-black;
+    }
 
-@media only screen and (max-width: 48em) {
-    body {
-        font-size: 80%;
+    h1 {
+        font-size: 2.4em;
     }
-    [role="main"] {
-        font-size: 80%;
-        padding-left: 20px !important;
-        padding-right: 20px !important;
+    h2 {
+        font-size: 2em;
     }
-}
-
-
-// Tablet Screens (Portrait)
-// --------------------------------------------------------------------------
-
-@media only screen and (max-width: 64em) {
-    body {
-        font-size: 90%;
+    h3 {
+        font-size: 1.8em;
     }
-    .home article h1 {
-        font-size: 3em;
+    h4 {
+        font-size: 1.6em;
     }
-    .home .logo {
-        max-width: 460px !important;
+    h5 {
+        font-size: 1.4em;
     }
-    .desktop {
-        display: block !important;
+    h6 {
+        font-size: 1.2em;
     }
-    .desktop-inline {
-        display: inline-block !important;
+    p, blockquote, figcaption {
+        font-size: 1em;
+        line-height: 1.9;
+        margin-bottom: 1.4em; 
+        a {
+            color: inherit;
+            border-bottom: 1px solid @color-blue;
+            &:hover {
+                color: @color-blue;
+            }
+        }
     }
-    .mobile, .mobile-inline {
-        display: none !important;
+    ul, ol {
+        font-size: 1em;
+        line-height: 1.9;
+        margin-bottom: 1.4em;
+        color: @color-black--light; 
     }
-    [role="main"] {
-        padding-left: 30px !important;
-        padding-right: 30px !important;
+    p {
+        color: @color-black--light;
     }
-}
-
-// Tablet Screens (Tablet Landscape)
-// --------------------------------------------------------------------------
-
-@media only screen and (min-width: 64em) {
-    body {
-        font-size: 100%;
+    em {
+        font-style: italic;
     }
-    [role="main"] {
-        padding-left: 40px !important;
-        padding-right: 40px !important;
+    strong {
+        font-style: bold;
     }
-}
-
-// Screens (Desktop)
-// --------------------------------------------------------------------------
-
+    figcaption {
+        font-size: 75%;
+        display: block;
+        margin-bottom: 1.4rem;
+        padding: 0.4rem 0rem 1rem 1rem;
+        color: @color-black--light;
+        .font-display;
+        border-bottom: 1px solid @color-white--dark;
+    }
+    blockquote {
+        border-left: 5px solid @color-red;
+        padding-left: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-family: serif;
+        font-size: 1.2em;
+        .font-display;
+        color: @color-black--light;
+    }
+    section ul {
+        margin-left: 3rem;
+    }

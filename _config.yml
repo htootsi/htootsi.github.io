@@ -1,27 +1,21 @@
 name: 'Helen Tootsi'
-tagline: 'Creative, Film Production, Writer'
+tagline: 'Film, Creative, Writing'
 pygments: false
 markdown: kramdown
-paginate: 5
 version: 0.9
+
+headline: The world is a book and those who do not travel read only one page
+subheadline:
 
 seo:
   author: 'Helen Tootsi'
-  description: ''
-  keywords: ''
 
-url: ''
 permalink: /:year/:title
 
 social:
-  fb:
   tw: 'http://www.twitter.com/'
-  in: 'http://uk.linkedin.com/in/helentootsi'
+  in: 'uk.linkedin.com/in/helentootsi'
   insta: 'http://www.instagram.com/htootsi'
-
-google:
-  analytics : ''
-  verification : ''
 
 assets:
   img: '/assets/images/'

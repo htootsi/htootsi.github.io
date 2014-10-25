@@ -6,57 +6,77 @@
 
 <head>
 
-    <title>{{ site.name}} || {% if page.title %}{{ page.title }}{% else %}{{ site.tagline }}{% endif %}</title>
+	<title>{{ site.name}} || {% if page.title %}{{ page.title }}{% else %}{{ site.tagline }}{% endif %}</title>
 
-    <!-- // Site Info
-    ====================================
+	<!-- // Site Info
+	====================================
 
-    Version:  {{ site.version }}
+	Version:  {{ site.version }}
 
-    Launch:   
-    Updated:  {{ site.time | date_to_long_string }}
+	Launch:   
+	Updated:  {{ site.time | date_to_long_string }}
 
-    Author:   {{ site.seo.author }}
+	Author:   {{ site.seo.author }}
 
-    Notes:    Congratulations! You are a nerd like us!
-              Maybe check out the github page?
+	Notes:    Congratulations! You are a nerd like us!
+	    	  Maybe check out the github page?
 
-    Git:      http://www.github.com/helentootsi
+	Git:      http://www.github.com/{{ site.social.github }}
 
-    ====================================
-    // -->
+	====================================
+	// -->
 
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png" />
-    <meta name="robots" content="index, follow"/>
+	<!-- Primary Metadata  -->
+	<meta charset="utf-8">
+	<meta name="description" content="{% if page.description == null %}{{ site.seo.description }}{% else %}{{ page.description }}{% endif %}"/>
+	<meta name="keywords" content="{{ site.seo.tags }}, {{ page.tags }}"/>
+	<meta name="author" content="{% if post %}{{ post.author }}{% else %}{{ site.seo.author }}{% endif %}"/>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
 
+	<!-- Robots & Favicons  -->
+	<link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png" />
+	<meta name="robots" content="index, follow"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <!-- CSS and Fonts  -->
-    <link rel="stylesheet" href="/assets/stylesheets/style.css" />
+	<!-- CSS and Fonts  -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic|Open+Sans:300,700" type="text/css">
+	<link rel="stylesheet" href="{{ site.assets.css }}style.css" type="text/css" />
+
+	<!-- JS  -->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="{{ site.assets.js }}main.js"></script>
 
 </head>
-
-<body{% if page.id %} id="{{ page.id }}"{% endif %}>
-
-    <nav role="navigation">
-        <a href="/" title="Homepage of www.helentootsi.com" class="logo" target="_self"><img src="/assets/images/logo.png" alt="Helen Tootsi, Creative, Film Production, Writer" /></a>
-        <ul>
-            <li class="in"><a href="{{ site.social.in }}" title="Helen Tootsi's Linkedin"><i class="icon-linkedin"></i></a></li>
-            <li class="is"><a href="{{ site.social.insta }}" title="Helen Tootsi's Instagram"><i class="icon-instagram"></i></a></li>
-            <li class="ro"><button id="trigger-overlay" type="button"><i class="icon-reorder"></i></button></li>
-        </ul>
-    </nav> 
-    <div id="overlay-menu" class="overlay-menu overlay-scale">
-        <button type="button" id="overlay-close">x</button>
-        <nav>
-            <ul>
-                <li class="film"><a href="/film">Film</a></li>
-                <li class="television"><a href="/television">Television</a></li>
-                <li class="creative"><a href="/creative">Creative</a></li>
-                <li class="writing"><a href="/writing">Writing</a></li>
-                <li class="education"><a href="/education">Education</a></li>
-                <li class="other"><a href="/other">All Other</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div id="container">
+<body>
+	<div id="faux-column"></div>
+	<div id="container">
+		<div id="left-column">
+			<nav>
+				<ul id="navbar">
+					<li id="logo"><a href="{{ site.url }}/"><img src="{{ site.assets.img }}logo.png" /></a></li>
+					<li id="show-menu"><a href=""><i class="icon-menu"></i></a></li>
+				</ul>
+				<ul id="menu">
+					{% include nav.html %}
+				</ul>
+			</nav>
+			<header>
+				<figure><img src="{{ site.assets.img }}profile/ht-1.jpg" /></figure>
+				<h6>{{ site.name }}</h6>
+				<p class="headline">{{ site.headline }}</p>
+			</header>
+			<div class="clearfix"></div>
+			<aside
+			<p class="subheadline">{{ site.subheadline }}</p>
+			<p><a href="{{ site.url }}/assets/downloads/helen-tootsi-cv.pdf">Download CV</a><br /><a href="{{ site.email }}">Send Email</a></p>
+			<hr>
+			</aside>
+			<footer>
+				<ul class="social">
+					<li class="tw"><a href="{{ site.social.tw }}"><i class="icon-twitter"></i></a></li>
+					<li class="in"><a href="{{ site.social.in }}"><i class="icon-linkedin"></i></a></li>
+					<li class="ig"><a href="{{ site.social.ig }}"><i class="icon-instagram"></i></a></li>
+				</ul>
+			</footer>
+		</div>

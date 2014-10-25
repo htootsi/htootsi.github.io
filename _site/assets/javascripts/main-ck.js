@@ -1,0 +1,1 @@
+$(document).ready(function(e){e("#show-menu").click(function(){return e("#menu, #show-menu").toggleClass("active"),!1})});

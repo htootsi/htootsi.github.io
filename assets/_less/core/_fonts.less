@@ -1,41 +1,37 @@
-// Font Import
-// --------------------------------------------------------------------------
-
-@import 'http://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic|Varela+Round';
-
-
-// Ubuntu - display & text font
+// Open Sans - display & text font
 // --------------------------------------------------------------------------
 
 .font-text {
-    font-family: 'Ubuntu',  Helvetica, Verdana, Arial, sans-serif;
-    font-weight: 300;
+    font-family: "Sorts Mill Goudy", serif;
+    font-weight: 400;
 }
 .font-text-italic {
-    font-family: 'Ubuntu',  Helvetica, Verdana, Arial, sans-serif;
-    font-weight: 300;
+    font-family: "Sorts Mill Goudy", serif;
+    font-weight: 400;
     font-style: italic;
 }
-.font-text-bold {
-    font-family: 'Ubuntu',  Helvetica, Verdana, Arial, sans-serif;
-    font-weight: 500;
+
+.font-display {
+    font-family: 'Open Sans',  Helvetica, Verdana, Arial, sans-serif;
+    font-weight: 300;
+}
+
+.font-text-bold, .font-display-bold {
+    font-family: 'Open Sans',  Helvetica, Verdana, Arial, sans-serif;
+    font-weight: 700;
 }
 
 
-// Varela - display font
-// --------------------------------------------------------------------------
-
-.font-display {font-family: 'Varela Round',  Helvetica, Verdana, Arial, sans-serif;}
 
 
 
 // Icons - iconography font
 // --------------------------------------------------------------------------
 
-.font-import('bivee-icons');
+.font-import('icomoon');
 
 [class^="icon-"], [class*=" icon-"] {
-    font-family: 'bivee-icons';
+    font-family: 'icomoon';
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -48,51 +44,57 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-reorder:before {
+.icon-menu:before {
     content: "\e600";
 }
-.icon-linkedin:before {
+.icon-checkmark:before {
     content: "\e601";
 }
-.icon-facebook:before {
+.icon-google:before {
     content: "\e602";
 }
-.icon-twitter:before {
+.icon-facebook:before {
     content: "\e603";
 }
-.icon-pinterest:before {
+.icon-twitter:before {
     content: "\e604";
 }
 .icon-github:before {
     content: "\e605";
 }
-.icon-ok-check:before {
+.icon-pinterest:before {
     content: "\e606";
 }
-.icon-search:before {
-    content: "\e60f";
+.icon-linkedin:before {
+    content: "\e612";
 }
-.icon-behance:before {
-    content: "\e607";
-}
-.icon-instagram:before {
-    content: "\e608";
-}
-.icon-flickr:before {
-    content: "\e609";
-}
-.icon-location:before {
-    content: "\e60a";
+.icon-cross:before {
+    content: "\e613";
 }
 .icon-arrow-left:before {
-    content: "\e60b";
+    content: "\e607";
 }
 .icon-arrow-down:before {
-    content: "\e60c";
+    content: "\e608";
 }
 .icon-arrow-up:before {
-    content: "\e60d";
+    content: "\e609";
 }
 .icon-arrow-right:before {
+    content: "\e60a";
+}
+.icon-arrow-left2:before {
+    content: "\e60b";
+}
+.icon-arrow-down2:before {
+    content: "\e60c";
+}
+.icon-arrow-up2:before {
+    content: "\e60d";
+}
+.icon-arrow-right2:before {
     content: "\e60e";
+}
+.icon-instagram:before {
+    content: "\e60f";
 }

@@ -1,0 +1,11 @@
+{% include header.html %}
+        <main id="right-column">
+            <header>
+                <h1>{{ page.title }}</h1>
+                <p class="headline">{{ page.headline }}</p>
+                <p>{{ page.intro }}</p>
+            </header>
+            <section>
+{{ content }}
+            </section>
+{% include footer.html %}

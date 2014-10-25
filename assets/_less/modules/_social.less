@@ -4,88 +4,79 @@
 @facebook:      #3B5998;
 @twitter:       #4099FF;
 @google:        #d34836;
-@linkedin:      #0e76a8;
 @pinterest:     #c92228;
-@instagram:     #3f729b;
+@vimeo:         #aad450;
+@youtube:       #c4302b;
+@linkedin:      #4875B4;
+@instagram:     #4E433C;
 
 
 // Social Styles
 // --------------------------------------------------------------------------
 
-.fb {
-    @color: @facebook;
-    background: @color !important;
-    &:hover {
-        background: lighten(@color, 10%) !important;
+.social {
+    @height: 3em;
+    height: @height;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 90%;
+    li {
+        display: inline-block;
+        .radius(100%);
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        line-height: 100% !important;
     }
+    a {
+        display: table-cell;
+        height: 100%;
+        vertical-align: middle;
+        font-size: @height / 3;
+        padding: @height / 4;
+        text-align: center;
+        color: @color-white;
+        i {
+            font-size: @height / 2;
+        }
+    }
+}
+.social-color(@color) {
+    background-color: @color !important;
+    color: @color-white--light;
+    &:hover {
+        background-color: lighten(@color, 10%) !important;
+    }
+}
+.fb {
+    .social-color(@facebook);
 }
 .tw {
-    @color: @twitter;
-    background: @color !important;
-    &:hover {
-        background: lighten(@color, 10%) !important;
-    }
+    .social-color(@twitter);
 }
 .gp {
-    @color: @google;
-    background: @color !important;
-    &:hover {
-        background: lighten(@color, 10%) !important;
-    }
+    .social-color(@google);
 }
-
+.pn {
+    .social-color(@pinterest);
+}
+.vm {
+    .social-color(@vimeo);
+}
+.yt {
+    .social-color(@youtube);
+}
 .in {
-    @color: @linkedin;
-    background: @color !important;
-    &:hover {
-        background: lighten(@color, 10%) !important;
-    }
+    .social-color(@linkedin);
 }
-
-.is {
-    @color: @instagram;
-    background: @color !important;
-    &:hover {
-        background: lighten(@color, 10%) !important;
-    }
+.ig {
+    .social-color(@instagram);
 }
 
 .top {
-    @color: @black-dark;
-    background: @color !important;
+    @color: @color-black--dark;
+    background: @color;
     &:hover {
-        background: @black !important;
-    }
-}
-
-
-// Social Sidebar Styles
-// --------------------------------------------------------------------------
-
-#social {
-    @from-top: 3.125rem;
-    position: absolute;
-    right: -1 * @social-btn-size;
-    top: @from-top;
-    width: @social-btn-size;
-    z-index: 10 !important;
-    &.position-fixed {
-        position: fixed;
-        top: @from-top;
-        right: 0;
-        z-index: 10000;
-    }
-    a {
-        display: block;
-        color: @white;
-        width: @social-btn-size;
-        height: @social-btn-size;
-        font-size: 1.4rem;
-        padding: 0.5em;
-        text-align: center;
-        i {
-            height: 2em; 
-            width: 2em;
-        }
+        background: @color-black;
     }
 }
