@@ -652,7 +652,7 @@ nav ul#menu li a:hover {
 }
 .category-list li {
   border-left: 3px solid #d1d3d4;
-  padding-left: 2rem;
+  padding-left: 0;
 }
 .category-list li h4 {
   padding-left: 0 !important;
