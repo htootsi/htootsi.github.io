@@ -634,8 +634,8 @@ nav ul#menu li a:hover {
 .category-list {
   padding-top: 0;
   padding-bottom: 0;
-  margin-left: 0;
   padding-left: 0;
+  margin-left: 0;
   list-style: none;
   font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
   font-weight: 300;
@@ -651,8 +651,6 @@ nav ul#menu li a:hover {
   padding-bottom: 0.2rem;
 }
 .category-list li {
-  margin-bottom: 2rem;
-  margin-top: 2rem;
   border-left: 3px solid #d1d3d4;
   padding-left: 2rem;
 }
@@ -668,7 +666,7 @@ nav ul#menu li a:hover {
 .category-list ul li {
   display: block;
   border: none;
-  padding: 1.4rem 0;
+  padding: 1rem 0;
 }
 .category-list ul li:first-child {
   display: none !important;
